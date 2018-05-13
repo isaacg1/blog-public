@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Isaac Grosof</title>
-    <link>isaacg1.ithub.io/</link>
+    <link>isaacg1.github.io/</link>
     <description>Recent content on Isaac Grosof</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 13 May 2018 02:37:03 -0400</lastBuildDate>
     
-	<atom:link href="isaacg1.ithub.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="isaacg1.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Three Worlds Collide</title>
-      <link>isaacg1.ithub.io/posts/three-worlds-collide/</link>
+      <link>isaacg1.github.io/posts/three-worlds-collide/</link>
       <pubDate>Sun, 13 May 2018 02:37:03 -0400</pubDate>
       
-      <guid>isaacg1.ithub.io/posts/three-worlds-collide/</guid>
+      <guid>isaacg1.github.io/posts/three-worlds-collide/</guid>
       <description>I read a very thought provoking story: Three Worlds Collide, by Eliezer Yudkowsky.
 One high level moral question that the story asks, is how to treat an alien species with severely different moral viewpoints from one&amp;rsquo;s own. In particular, how to act when the other species&amp;rsquo; actions are horrific, by one&amp;rsquo;s own moral stance. Call this the &amp;ldquo;horrorific morals&amp;rdquo; question.
 Here I will not attempt to tackle the more difficult object-level moral question of which of the three species moral&amp;rsquo;s are good or horrific, but instead the meta-level moral question of how one should act upon encountering such a species.</description>
