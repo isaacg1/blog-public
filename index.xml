@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/isaacg1&#34;&gt;Isaac Grosof&lt;/a&gt; 2018</copyright>
-    <lastBuildDate>Sun, 13 May 2018 02:37:03 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 19 May 2018 12:14:49 -0400</lastBuildDate>
     
 	<atom:link href="https://isaacg1.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Inside and Outside View</title>
+      <link>https://isaacg1.github.io/posts/inside-outside/</link>
+      <pubDate>Sat, 19 May 2018 12:14:49 -0400</pubDate>
+      
+      <guid>https://isaacg1.github.io/posts/inside-outside/</guid>
+      <description>Recently, I&amp;rsquo;ve seen a couple cases where people have looked at an issue from the inside and from the outside. In one, the subject of schooling, I have the outside view. I come at schooling as a student, a user of schooling. I am not a teacher, though I may one day become one. In the other, the subject of machine learning, I have the inside view. I understand ML from the perspective of a computer scientist.</description>
+    </item>
     
     <item>
       <title>Three Worlds Collide</title>
