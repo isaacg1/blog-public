@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Sylvester-Gallai Theorem | Isaac Grosof&#39;s blog</title>
+
+
+<link rel="stylesheet" href="/css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://isaacg1.github.io"><h1 class="title is-4">Isaac Grosof&#39;s blog</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile"><a class="level-item" aria-label="email" href='mailto:isaacbg227@gmail.com' target='_blank' rel='noopener'>
+            <span class="icon">
+              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+    <polyline points="22,6 12,13 2,6"/>
+    
+  </svg></i>
+            </span>
+          </a><a class="level-item" aria-label="github" href='https://github.com/isaacg1' target='_blank' rel='noopener'>
+            <span class="icon">
+              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+    
+  </svg></i>
+            </span>
+          </a></nav>
+      </div>
+    </nav>
+
+    
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+    </div>
+    <h2 class="subtitle is-6">July 19, 2018</h2>
+    <h1 class="title">Sylvester-Gallai Theorem</h1>
+    
+    <div class="content">
+      <p>The <a href="https://en.wikipedia.org/wiki/Sylvester%E2%80%93Gallai_theorem" target="_blank">Sylvester-Gallai Theorem</a> is a deceptively simple theorem in geometry.
+It meets all four of my criteria for a great theorem:</p>
+
+<ol>
+<li>Easy to state</li>
+<li>Interesting to think about</li>
+<li>Hard to prove from scratch</li>
+<li>Has a simple proof</li>
+</ol>
+
+<p>The theorem is as follows:</p>
+
+<p>For any finite set of distinct points in the Euclidean plane, either</p>
+
+<ul>
+<li>all of the points lie on a single line; or</li>
+<li>there exists a line that contains exactly two of the points.</li>
+</ul>
+
+<p>Criterion 1 is clear, assuming I didn&rsquo;t flub the definition.
+Criterion 2 is subjective, but I have fun imagining wacky arrangements of points that try to put at least three points on every line.
+Criterion 3 can be seen by working on the problem a bit, pr by looking at the history of the problem. The theorem was first posed as a problem by J. J. Sylvester in 1893, and it was not solved until 1941, and not widely known to be solved until 1944.
+As for Criterion 4, here is an impressively simple proof, due to Leroy Milton Kelly:</p>
+
+<p>Suppose <em>S</em> is a finite set of points in the Euclidean plane that are not collinear.
+Let <em>L</em> be the set of all lines that contain at least two points in <em>S</em>.
+For each line <em>l</em> in <em>L</em>, let <em>l</em>&rsquo;s <strong>minimum miss</strong> be the smallest distance from <em>l</em> to any point not contained in <em>l</em>.</p>
+
+<p>Let <em>l&#42;</em> be the line in <em>L</em> with smallest minimum miss. As it turns out, <em>l&#42;</em> contains exactly two points in <em>S</em>.</p>
+
+<p>Let us suppose that <em>l&#42;</em> contains at least three points in <em>S</em>, for sake of contradiction.
+Let use <em>p</em> to denote the point in <em>S</em> that lies closest to <em>l&#42;</em> without being on <em>l&#42;</em>.
+Let us use <em>p&rsquo;</em> to denote the point on <em>l&#42;</em> that is closest to <em>p</em>. Note that the line <em>pp&rsquo;</em> is perpendicular to <em>l&#42;</em>.</p>
+
+<p>Since we are assuming that there are at least three points in <em>S</em> on <em>l&#42;</em>, at least two of them must be on the same side of <em>p&rsquo;</em>,
+or one coincides with <em>p&rsquo;</em>.
+Let us call the farther point <em>a</em> and the nearer point <em>b</em>, where <em>a</em> and <em>b</em> are on the same side of <em>p&rsquo;</em>, or <em>b</em> is <em>p&rsquo;</em>.
+<em>a</em> and <em>b</em> and <em>c</em> cannot all be <em>p&rsquo;</em>.</p>
+
+<p>The contradiction lies in the fact that <em>b</em> is closer to the line <em>ap</em> than <em>p</em> is to <em>l&#42;</em>, which contradicts the definition of <em>l&#42;</em>.</p>
+
+<p>To see that this is true, let <em>b&rsquo;</em> be the closest point on <em>ap</em> to <em>b</em>.
+Then <em>ab&rsquo;b</em> and <em>ap&rsquo;p</em> are similar triangles, as they are both right triangles and they share the angle <em>pab</em>.
+Therefore, the ratio of <em>ab</em> to <em>bb&rsquo;</em> and <em>ap</em> to <em>pp&rsquo;</em> are equal.
+However, <em>ap &gt; ap&rsquo; ≥ ab</em>.</p>
+
+<p>Thus, <em>pp&rsquo; &gt; bb&rsquo;</em>. This contradicts the definition of <em>l&#42;</em>, showing that the assumption must be false.</p>
+
+<hr />
+
+<p>This level of clarity (if augmented with a diagram or two, see <a href="https://en.wikipedia.org/wiki/Sylvester%E2%80%93Gallai_theorem" target="_blank">the Wikipedia page</a>) is what every proof should aspire to, although it is not always possible.
+It&rsquo;s interesting to look at what theorems look like if they are missing each of the above criteria:</p>
+
+<ol>
+<li>Not easy to state: Much of higher mathematics can be beautiful and deep and simple to prove, but requires a great deal of machinery to state.</li>
+<li>Not interesting to think about: A fair amount of the output of automatic theorem-provers can look like this.</li>
+<li>Not hard to prove from scratch: More of a puzzle than a theorem.</li>
+<li>No simple proof: The four color theorem, or the classification of finite simple groups.</li>
+</ol>
+
+<p>I&rsquo;ll continue to seek out theorems that have all four of these criteria, and put them on this blog.</p>
+
+      
+      <div class="related">
+</div>
+      
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://github.com/isaacg1">Isaac Grosof</a> 2018</p>
+    
+      <p>Powered by <a href="https://gohugo.io/">Hugo</a> &amp; <a href="https://github.com/ribice/kiss">Kiss</a>.</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+

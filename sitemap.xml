@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://isaacg1.github.io/posts/sylvester-gallai-theorem/</loc>
+    <lastmod>2018-07-19T22:54:44-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://isaacg1.github.io/posts/inside-outside/</loc>
     <lastmod>2018-05-19T12:14:49-04:00</lastmod>
   </url>
@@ -14,13 +19,13 @@
   
   <url>
     <loc>https://isaacg1.github.io/</loc>
-    <lastmod>2018-05-19T12:14:49-04:00</lastmod>
+    <lastmod>2018-07-19T22:54:44-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://isaacg1.github.io/posts/</loc>
-    <lastmod>2018-05-19T12:14:49-04:00</lastmod>
+    <lastmod>2018-07-19T22:54:44-07:00</lastmod>
     <priority>0</priority>
   </url>
   

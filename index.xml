@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/isaacg1&#34;&gt;Isaac Grosof&lt;/a&gt; 2018</copyright>
-    <lastBuildDate>Sat, 19 May 2018 12:14:49 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 19 Jul 2018 22:54:44 -0700</lastBuildDate>
     
 	<atom:link href="https://isaacg1.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Sylvester-Gallai Theorem</title>
+      <link>https://isaacg1.github.io/posts/sylvester-gallai-theorem/</link>
+      <pubDate>Thu, 19 Jul 2018 22:54:44 -0700</pubDate>
+      
+      <guid>https://isaacg1.github.io/posts/sylvester-gallai-theorem/</guid>
+      <description>The Sylvester-Gallai Theorem is a deceptively simple theorem in geometry. It meets all four of my criteria for a great theorem:
+ Easy to state Interesting to think about Hard to prove from scratch Has a simple proof  The theorem is as follows:
+For any finite set of distinct points in the Euclidean plane, either
+ all of the points lie on a single line; or there exists a line that contains exactly two of the points.</description>
+    </item>
     
     <item>
       <title>Inside and Outside View</title>
