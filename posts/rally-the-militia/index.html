@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Rally the Militia | Isaac Grosof&#39;s blog</title>
+
+
+<link rel="stylesheet" href="/css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://isaacg1.github.io"><h1 class="title is-4">Isaac Grosof&#39;s blog</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile"><a class="level-item" aria-label="email" href='mailto:isaacbg227@gmail.com' target='_blank' rel='noopener'>
+            <span class="icon">
+              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+    <polyline points="22,6 12,13 2,6"/>
+    
+  </svg></i>
+            </span>
+          </a><a class="level-item" aria-label="github" href='https://github.com/isaacg1' target='_blank' rel='noopener'>
+            <span class="icon">
+              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+    
+  </svg></i>
+            </span>
+          </a></nav>
+      </div>
+    </nav>
+
+    
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+    </div>
+    <h2 class="subtitle is-6">July 20, 2018</h2>
+    <h1 class="title">Rally the Militia</h1>
+    
+    <div class="content">
+      <p>It&rsquo;s the middle of the night, and you&rsquo;re the lookout for danger to your country.
+On the horizon, you spy an advancing army.
+Quick! You must ride to rally the Militia to defend your country.</p>
+
+<p>You have a map of the locations of all of the militia members throughout your country.
+However, they&rsquo;re all spread out. If you need to wake them up yourself, it&rsquo;ll take far too long.
+Fortunately, once you wake up a militia member, you can instruct them to help you rally the rest of the militia.</p>
+
+<p>Can you rally the militia quickly, regardless of where the are, and how but the militia is?</p>
+
+<hr />
+
+<p>Let&rsquo;s turn this in to a mathematical problem.
+Let&rsquo;s say the country is a square, with side length one.
+The lookout starts at an arbitrary point in the country, and the militia is at an arbitrary set of points in the country.
+Let&rsquo;s say everyone moves at a rate of one, and can only move when awake.
+Everyone except the lookout starts asleep, and people can only be woken up by another person reaching their location.
+All information is public.</p>
+
+<p>The goal is to wake up everyone in a constant amount of time,
+not dependent on the number of militia members.</p>
+
+<hr />
+
+<p>Here&rsquo;s a way we can accomplish this:</p>
+
+<ol>
+<li>The lookout wakes up an arbitrary other person.</li>
+<li>Split the square in half vertically.</li>
+<li>Each of the two awake people wake up an arbitrary person in their half of the square.</li>
+<li>Split the half squares in half horizontally.</li>
+<li>Each of the two people in each rectangle wake up an arbitrary person in their subsquare.</li>
+<li>Repeat.</li>
+</ol>
+
+<p>How long does this take in total?
+Let&rsquo;s call the first wakeup phase 1, then the two people they wake up next phase 2, then the four people they wake up ext phase 3, and so on.
+The time that needs to be spent in a phase is at most the maximum distance anyone needs to travel in that phase, because everyone travels at speed 1.</p>
+
+<ul>
+<li>The maximum distance anyone needs to travel in phase 1 is <em>sqrt(2)</em>, the maximum distance within the square.</li>
+<li>The maximum distance anyone needs to travel in phase 2 is <em>sqrt(2)</em>, the maximum distance within the square.</li>
+<li>The maximum distance anyone needs to travel in phase 3 is <em>sqrt(5)/2</em>, the maximum distance within a rectangle with side lengths 1 and <sup>1</sup>&frasl;<sub>2</sub>.</li>
+<li>The maximum distance anyone needs to travel in phase 4 is <em>sqrt(2)/2</em>, the maximum distance within a sub-square with side length <sup>1</sup>&frasl;<sub>2</sub>.</li>
+<li>The maximum distance anyone needs to travel in phase 5 is <em>sqrt(5)/4</em>, the maximum distance within a rectangle with side lengths <sup>1</sup>&frasl;<sub>2</sub> and <sup>1</sup>&frasl;<sub>4</sub>.</li>
+<li>And so on</li>
+</ul>
+
+<p>These distances, leaving out phase 1, form a pair of geometric sequences, which makes it easy to sum the sequence.
+The total is 3 sqrt(2) + sqrt(5), which approximately equals 6.479. Every militia can be rallied in at most 6.479.</p>
+
+<hr />
+
+<p>Follow-on questions:</p>
+
+<ul>
+<li><p>Can you devise a strategy that rallies an arbitrary militia faster than 6.479?
+It seems like this strategy is pretty inefficient, and even some small changes might bring big improvements.</p></li>
+
+<li><p>The slowest militia to rally that I know of consists of the four corners of the square and the center point, with the lookout at the center.
+This militia takes at least 2 + sqrt(2)/2 to rally, which is roughly 2.707. Can you find a militia that takes longer to rally?</p></li>
+</ul>
+
+      
+      <div class="related">
+</div>
+      
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://github.com/isaacg1">Isaac Grosof</a> 2018</p>
+    
+      <p>Powered by <a href="https://gohugo.io/">Hugo</a> &amp; <a href="https://github.com/ribice/kiss">Kiss</a>.</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+
