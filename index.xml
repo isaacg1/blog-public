@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/isaacg1&#34;&gt;Isaac Grosof&lt;/a&gt; 2018</copyright>
-    <lastBuildDate>Fri, 03 Aug 2018 23:22:46 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 26 Aug 2018 02:29:13 -0400</lastBuildDate>
     
 	<atom:link href="https://isaacg1.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Rust Images</title>
+      <link>https://isaacg1.github.io/posts/rust-images/</link>
+      <pubDate>Sun, 26 Aug 2018 02:29:13 -0400</pubDate>
+      
+      <guid>https://isaacg1.github.io/posts/rust-images/</guid>
+      <description>I have made four rust programs for programmatically generating artwork in different styles. Here is a sample in each style, along with an explanation of the algorithms:
+Disrupted continuity Algorithm: Choose locations in a random order. At each location, choose the pixel color with the smallest possible color distance from that of the surrounding pixels that have been placed, weighted by the distance of the surrounding pixels.
+Repository: https://github.com/isaacg1/color-cont</description>
+    </item>
     
     <item>
       <title>Uell</title>
